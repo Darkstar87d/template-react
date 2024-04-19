@@ -25,13 +25,12 @@ export class Preloader extends Scene {
     preload() {
         //  Load the assets for the game - Replace with your own assets
         this.load.setPath("assets");
-
-        this.load.image(
+        this.load.image([
             { key: "logo", url: "logo.png" },
-            { key: "star", url: "star.png" }
-        );
-        // Backgrounds
-        this.load.setPath("assets/image/PNG");
+            { key: "star", url: "star.png" },
+        ]);
+
+        this.load.setPath("assets/backgrounds/PNG/");
         this.load.image([
             {
                 key: "battle1",
